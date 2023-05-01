@@ -1,0 +1,7 @@
+# notes
+
+docker build . -t pfsense-docker
+
+docker run -d -p 22:22 -p 80:80 -p 443:443 --name pfsense-docker pfsense-docker:latest
+
+docker logs -f pfsense-docker
